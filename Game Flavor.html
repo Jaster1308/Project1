@@ -5,6 +5,7 @@
     <title>Game Flavor</title>
 
     <link href="GF.css" rel="stylesheet" />
+    <link href="GF.js" rel="script"/>
 
 </head>
 <body>
@@ -23,15 +24,23 @@
     </header>
 </div>
 <section id="feature">
-    <a href="#"><img src="https://yt3.ggpht.com/-sJcR4Q95SR0/VrAxj18QVXI/AAAAAAAAACE/2kV7GJbmIiw/w1060-fcrop64=1,00005a57ffffa5a8-nd/banner.png" alt="Game Flavor Aawesomeness" /></a>
+    <a href="#"><img src="https://i.ytimg.com/vi/qYR3prkM3_g/maxresdefault.jpg" alt="Game Flavor Aawesomeness" height="400" width="1150"/></a>
     <div id="feature-info">
-        <a href="#"><h2>Game Flavor</h2></a>
+        <a href="#"><h2 id="games" onmouseover="appear(this)" onmouseout="stop(this)">Game Flavor!!!!</h2></a>
+        <script>
+            function appear(element) {
+                element.style.color="blue"
+            }
+            function stop(element) {
+                element.style.color="#5db5e3"
+            }
+        </script>
         <p>Welcome to the shop! We are Game Flavor and we are here to entertain the s*** out of you! So come in and enjoy our awesome flavors we have to offer. Don't eat too much or you might get brain freeze.</p>
         <p class="btn"><a href="#">Ice Cream Flavors</a></p>
     </div>
 </section>
 
-<section id="content">
+<center><section id="content">
     <div class="bucket">
         <a href="#" id="flavors">Flavors sitting in the Fridge</a>
 
@@ -39,7 +48,6 @@
 
         <p><a href="#">View all the flavors</a></p>
     </div>
-
     <div class="bucket">
         <a href="#" id="cleansers">Someone clean my mouth</a>
 
@@ -63,7 +71,7 @@
 
         <p><a href="#">I'm sorta interested....</a></p>
     </div>
-</section>
+</section></center>
 
 <footer>
     <p id="copyright">&copy; Copyright GF 2016</p>
