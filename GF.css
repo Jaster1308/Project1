@@ -66,7 +66,7 @@ header nav ul li a {
     overflow: hidden; clear: both;
 }
 #content .bucket {
-    width: 212px; float: left; margin: 0 0 48px 100px; padding: 55px;
+    width: 212px; float: left; margin: 0 0 48px 100px; padding: 50px;
     border: 1px solid #262626;
     background: #000;
     background: -moz-linear-gradient(top, #000 0%, #000 39%, #191919 39%, #000 100%);
@@ -90,7 +90,7 @@ header nav ul li a {
 }
 
 #content .bucket p {
-    margin: 0 0 24px 0; padding: 0 13px 0 13px;
+    margin: 0 0 5px 0; padding: 0 13px 0 13px;
 }
 
 footer {
@@ -112,4 +112,7 @@ footer #back-top {
 }
 footer #back-top a {
     background: url(https://i.ytimg.com/vi/kxfeTcty3Do/maxresdefault.jpg) ; padding: 5px 5px 5px 4px;
+}
+#tag{
+    color:#5db5e3;
 }
