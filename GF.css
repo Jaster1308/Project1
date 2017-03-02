@@ -1,6 +1,7 @@
 body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
     margin: 0; padding: 0; border: 0;
 }
+/*Mostly decided on blue and black because thats the theme of my youtube channel*/
 body {
     font: 14px Helvetica, sans-serif; line-height: 24px; color: #a6a6a6;
     background: #000;
@@ -80,6 +81,7 @@ header nav ul li a {
     display: block; width: 212px; height: 143px;
     margin: 0 0 32px 0; text-indent: -9999px;
 }
+/*the pictures can and might have a background if the thumbnails are done, probably not.*/
 #content #Flavoroftheweek { background: url(); }
 #content #Palatecleanser { background: url(); }
 #content #Reviews { background: url(); }
