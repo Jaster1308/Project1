@@ -107,6 +107,7 @@ header nav ul li a {
 footer {
     width: 960px; margin:0 auto; height: 80px;
     font-size: 12px;
+    padding-top: 25px;
 }
 footer #copyright {
     float: left; margin: 0 0 0 22px;

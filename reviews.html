@@ -5,14 +5,13 @@
     <title>Game Flavor</title>
     <!--Css and javascript style sheets, might not need java-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!--<link href="GF.css" rel="stylesheet" />-->
+    <link href="reviewing.css" rel="stylesheet" />
     <link href="GF.js" rel="script"/>
-
 </head>
 <body>
 <div id="container">
     <header>
-        <h1><a href="#" onclick="nothing()"><img src="https://yt3.ggpht.com/-KEn56IyRxZU/AAAAAAAAAAI/AAAAAAAAAAA/t3j6lM5Y0Qc/s100-c-k-no/photo.jpg" alt="Return to the homepage" /></a></h1>
+        <h1><a href="Game_Flavor.html"><img src="https://yt3.ggpht.com/-KEn56IyRxZU/AAAAAAAAAAI/AAAAAAAAAAA/t3j6lM5Y0Qc/s100-c-k-no/photo.jpg" alt="Return to the homepage" /></a></h1>
         <nav>
             <ul>
                 <li><a href="#" onclick="nothing()">Flavors of the Week</a></li>
@@ -22,14 +21,53 @@
             </ul>
         </nav>
     </header>
-    <!--this is for the middle body with a picture to the right and text on the left with a button-->
 </div>
-<br><br><br>
-<div>
+<br><br><br><br>
+<center><div id="comment">
     <form action="http://www.example.com/comments.php">
         <h2>Tell us what you're thinking!</h2>
-        <textarea name="comments" placeholder="Give us your worst....be gentle...." cols="20" rows="8"></textarea>
+        <br>
+        <textarea name="comments" placeholder="Give us your worst....be gentle...." cols="150" rows="8"></textarea>
+        <br>
+        <button onclick="addToList()">Post</button>
     </form>
-</div>
+
+    <ul id="postingTable"></ul>
+</div></center>
+
+<footer>
+    <p id="copyright">&copy; Copyright GF 2016</p>
+    <ul>
+        <li><a href="#" onclick="nothing()">About us</a></li>
+        <li><a href="#" onclick="nothing()">Merchandise</a></li>
+        <li><a href="#" onclick="nothing()">News</a></li>
+        <li><a href="#" onclick="nothing()">Contact</a></li>
+    </ul>
+
+    <p id="back-top"><a href="#">Back to top</a></p>
+</footer>
+
+<script>
+    document.getElementById('posting').addEventListener('click', addToList);
+
+    var newPost = 1;
+
+    function addToList() {
+
+        var elements = document.getElementById('postingTable');
+        var items = document.createElement('li');
+
+        item.innerHTML = newPost;
+
+        newPost++;
+
+        elements.appendChild(items)
+    }
+
+
+    function nothing() {
+        alert('Uhhhhhh there is no content in here yet so stop clicking this tab!');
+    }
+</script>
 </body>
 </html>
